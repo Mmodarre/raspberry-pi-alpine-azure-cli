@@ -35,6 +35,7 @@ RUN /bin/bash -c 'TMP_PKG_DIR=$(mktemp -d); \
 RUN cat /azure-cli/az.completion > ~/.bashrc
 RUN az extension add --name azure-cli-iot-ext
 
+
 WORKDIR /
 
 CMD bash
