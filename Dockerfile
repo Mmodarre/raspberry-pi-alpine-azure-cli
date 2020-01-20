@@ -4,7 +4,7 @@ ARG CLI_VERSION
 
 # Metadata as defined at http://label-schema.org
 ARG BUILD_DATE
-Run git clone https://github.com/Azure/azure-cli.git /azure-cli
+RUN git clone https://github.com/Azure/azure-cli.git /azure-cli
 WORKDIR /azure-cli
 
 # pip wheel - required for CLI packaging
